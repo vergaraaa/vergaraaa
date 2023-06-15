@@ -1,30 +1,18 @@
-<!-- key: c27e34ca-3f52-472c-ba36-496b812a3da1 -->
-<!-- reset: https://api.countapi.xyz/set/c27e34ca-3f52-472c-ba36-496b812a3da1?value=0 -->
 <template>
-  <div v-if="loading">...</div>
-  <div v-else>
-    felicidades, eres el chismoso <strong>#{{visitors}}</strong>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
 </template>
 
-<script>
-import countapi from 'countapi-js';
+<script lang="ts">
+import { defineComponent } from 'vue';
+import HelloWorld from './components/HelloWorld.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
-  data() {
-    return {
-      visitors: 0,
-      loading: false,
-    }
-  },
-  async mounted() {
-    this.loading = true
-    const visitors = await countapi.hit('c27e34ca-3f52-472c-ba36-496b812a3da1')
-    this.visitors = visitors.value
-    this.loading = false
+  components: {
+    HelloWorld
   }
-}
+});
 </script>
 
 <style>
