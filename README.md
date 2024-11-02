@@ -22,7 +22,7 @@
 
 ###
 
-<p align="left">I'm Edgar Vergara from Mexico<br><br>- 🔭 I’m working as a Full Stack Developer<br>- 📚 I'm currently learning Java/Spring Boot<br>- ⚡ In my free time I like to exercise</p>
+<p align="left">I'm Edgar Vergara from Mexico<br><br>- 🔭 I’m working as a Full Stack Developer<br>- 📚 I'm currently learning NestJS<br>- ⚡ In my free time I like to exercise</p>
 
 ###
 
